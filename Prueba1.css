@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: blue;
+  color: white;
+}
+
+h1, main, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
+
+h1 {
+  background-image: url('BannerFut.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 3rem;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Izquierda: jornadas, derecha: clasificación */
+  gap: 80px;
+  background-color: blue;
+  align-items: start;
+  color: white;
+  padding: 2em;
+  padding-bottom: 5em;
+}
+
+.jornadas {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.resultados {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.resultados th, .resultados td {
+  width: 33.33%;
+  word-wrap: break-word;
+  border: 1px solid white;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.resultados th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.resultados tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.clasificacion {
+  max-width: 300px;
+}
+
+.clasif-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.clasif-tabla th, .clasif-tabla td {
+  border: 1px solid white;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.clasif-tabla th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.clasif-tabla tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.clasif-tabla td:first-child {
+  font-weight: bold;
+}
+
+/* Colores para posiciones */
+.clasif-champions {
+  background-color: #002366; /* azul oscuro */
+}
+
+.clasif-europa {
+  background-color: #ff8c00; /* naranja */
+  color: black;
+}
+
+.clasif-conference {
+  background-color: #006400; /* verde oscuro */
+}
+
+.ganador-bg {
+  background-color: #1cbc1c; /* verde oscuro */
+  color: white;
+  font-weight: bold;
+}
+
+.perdedor-bg {
+  background-color: #e31616; /* rojo oscuro */
+  color: white;
+  font-weight: normal;
+}
+
+.empate-bg {
+  background-color: #444444; /* gris oscuro */
+  color: white;
+  font-weight: normal;
+}
+
+/* Input buscador */
+#buscador {
+  margin: 0.5em auto 1em;
+  display: block;
+  padding: 0.5em;
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  background-color: green;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-left {
+  background-color: #004d00;
+  padding: 1em;
+  text-align: left;
+}
+
+.footer-center {
+  background-color: #228b22;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer-right {
+  background-color: #32cd32;
+  padding: 1em;
+  text-align: right;
+}
+
+footer a {
+  color: #ffffaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 0;
+}
