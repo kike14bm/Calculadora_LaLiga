@@ -201,3 +201,36 @@ footer a:hover {
 .footer-content p {
   margin: 0;
 }
+
+.nav-button {
+  background-color: black; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 8px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  font-size: 2rem; /* Tamaño de fuente */
+}
+
+.nav-button:hover {
+  background-color: white; /* Color de fondo al pasar el ratón */
+  color: black;
+}
+
+.jornada-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.jornada-nav-titulo {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.jornada-botones {
+  display: flex;
+  gap: 1em;
+}

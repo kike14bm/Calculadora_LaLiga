@@ -10,6 +10,13 @@
   <h1>Resultados La Liga</h1>
   <main>
     <div class="jornadas">
+      <div class="jornada-nav">
+        <p class="jornada-nav-titulo">Navegar entre jornadas</p>
+        <div class="jornada-botones">
+          <button id="prevJornada" class="nav-button">←</button>
+          <button id="nextJornada" class="nav-button">→</button>
+        </div>
+      </div>
       <div class="jornada" data-jornada="1">
         <h2>Jornada 1 - Resultados</h2>
         <table class="resultados">
@@ -34,7 +41,7 @@
           </tbody>
         </table>
       </div>
-      <div class="jornada" data-jornada="2">
+      <div class="jornada" data-jornada="2" style="display: none;">
         <h2>Jornada 2 - Resultados</h2>
         <table class="resultados">
           <thead>
@@ -58,6 +65,84 @@
           </tbody>
         </table>
       </div>
+      <!-- Jornada 11 - Vuelta de Jornada 1 -->
+      <div class="jornada" data-jornada="3" style="display: none;">
+        <h2>Jornada 11 - Resultados (Vuelta 1)</h2>
+        <table class="resultados">
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Resultado</th>
+              <th>Visitante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Barcelona</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Real Madrid</td></tr>
+            <tr><td>Betis</td><td class="editable resultado" contenteditable="true">0 - 2</td><td>Atlético de Madrid</td></tr>
+            <tr><td>Valencia</td><td class="editable resultado" contenteditable="true">1 - 3</td><td>Sevilla</td></tr>
+            <tr><td>Espanyol</td><td class="editable resultado" contenteditable="true">0 - 1</td><td>Real Sociedad</td></tr>
+            <tr><td>Osasuna</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Las Palmas</td></tr>
+            <tr><td>Rayo Vallecano</td><td class="editable resultado" contenteditable="true">1 - 2</td><td>Mallorca</td></tr>
+            <tr><td>Getafe</td><td class="editable resultado" contenteditable="true">0 - 1</td><td>Athletic Club</td></tr>
+            <tr><td>Girona</td><td class="editable resultado" contenteditable="true">2 - 1</td><td>Valladolid</td></tr>
+            <tr><td>Celta Vigo</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Villarreal</td></tr>
+            <tr><td>Deportivo Alavés</td><td class="editable resultado" contenteditable="true">0 - 0</td><td>Leganes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jornada 12 - Vuelta de Jornada 2 -->
+      <div class="jornada" data-jornada="4" style="display: none;">
+        <h2>Jornada 12 - Resultados (Vuelta 2)</h2>
+        <table class="resultados">
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Resultado</th>
+              <th>Visitante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Villarreal</td><td class="editable resultado" contenteditable="true">1 - 3</td><td>Barcelona</td></tr>
+            <tr><td>Sevilla</td><td class="editable resultado" contenteditable="true">2 - 1</td><td>Osasuna</td></tr>
+            <tr><td>Leganes</td><td class="editable resultado" contenteditable="true">0 - 2</td><td>Betis</td></tr>
+            <tr><td>Las Palmas</td><td class="editable resultado" contenteditable="true">3 - 2</td><td>Getafe</td></tr>
+            <tr><td>Mallorca</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Real Sociedad</td></tr>
+            <tr><td>Atlético de Madrid</td><td class="editable resultado" contenteditable="true">1 - 0</td><td>Girona</td></tr>
+            <tr><td>Espanyol</td><td class="editable resultado" contenteditable="true">0 - 1</td><td>Valencia</td></tr>
+            <tr><td>Real Madrid</td><td class="editable resultado" contenteditable="true">3 - 2</td><td>Deportivo Alavés</td></tr>
+            <tr><td>Valladolid</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Rayo Vallecano</td></tr>
+            <tr><td>Celta Vigo</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Athletic Club</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jornada 13 - Enfrentamientos nuevos -->
+      <div class="jornada" data-jornada="5" style="display: none;">
+        <h2>Jornada 13 - Resultados</h2>
+        <table class="resultados">
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Resultado</th>
+              <th>Visitante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Real Madrid</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Leganes</td></tr>
+            <tr><td>Barcelona</td><td class="editable resultado" contenteditable="true">3 - 0</td><td>Espanyol</td></tr>
+            <tr><td>Betis</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Villarreal</td></tr>
+            <tr><td>Osasuna</td><td class="editable resultado" contenteditable="true">0 - 3</td><td>Girona</td></tr>
+            <tr><td>Sevilla</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Getafe</td></tr>
+            <tr><td>Mallorca</td><td class="editable resultado" contenteditable="true">1 - 2</td><td>Real Sociedad</td></tr>
+            <tr><td>Atlético de Madrid</td><td class="editable resultado" contenteditable="true">1 - 0</td><td>Valencia</td></tr>
+            <tr><td>Rayo Vallecano</td><td class="editable resultado" contenteditable="true">0 - 0</td><td>Athletic Club</td></tr>
+            <tr><td>Celta Vigo</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Deportivo Alavés</td></tr>
+            <tr><td>Valladolid</td><td class="editable resultado" contenteditable="true">2 - 1</td><td>Las Palmas</td></tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
 
     <div class="clasificacion">

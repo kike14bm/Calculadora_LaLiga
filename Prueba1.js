@@ -129,9 +129,33 @@ function prepararBuscador() {
   });
 }
 
+// Función para manejar la navegación entre jornadas
+let jornadaActual = 1;
+
+function mostrarJornada(jornada) {
+  document.querySelectorAll('.jornada').forEach(jornadaDiv => {
+    jornadaDiv.style.display = jornadaDiv.dataset.jornada == jornada ? 'block' : 'none';
+  });
+}
+
+document.getElementById('prevJornada').addEventListener('click', () => {
+  if (jornadaActual > 1) {
+    jornadaActual--;
+    mostrarJornada(jornadaActual);
+  }
+});
+
+document.getElementById('nextJornada').addEventListener('click', () => {
+  if (jornadaActual < document.querySelectorAll('.jornada').length) {
+    jornadaActual++;
+    mostrarJornada(jornadaActual);
+  }
+});
+
 // Inicialización al cargar la página
 window.addEventListener('DOMContentLoaded', () => {
   prepararEventos();
   prepararBuscador();
   actualizar(); // Primera carga para mostrar tabla y colores
+  mostrarJornada(jornadaActual); // Mostrar la primera jornada
 });
