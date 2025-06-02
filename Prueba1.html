@@ -67,7 +67,7 @@
       </div>
       <!-- Jornada 11 - Vuelta de Jornada 1 -->
       <div class="jornada" data-jornada="3" style="display: none;">
-        <h2>Jornada 11 - Resultados (Vuelta 1)</h2>
+        <h2>Jornada 3 - Resultados (Vuelta Jornada 1)</h2>
         <table class="resultados">
           <thead>
             <tr>
@@ -93,7 +93,7 @@
 
       <!-- Jornada 12 - Vuelta de Jornada 2 -->
       <div class="jornada" data-jornada="4" style="display: none;">
-        <h2>Jornada 12 - Resultados (Vuelta 2)</h2>
+        <h2>Jornada 4 - Resultados (Vuelta Jornada 2)</h2>
         <table class="resultados">
           <thead>
             <tr>
@@ -119,7 +119,7 @@
 
       <!-- Jornada 13 - Enfrentamientos nuevos -->
       <div class="jornada" data-jornada="5" style="display: none;">
-        <h2>Jornada 13 - Resultados</h2>
+        <h2>Jornada 5 - Resultados</h2>
         <table class="resultados">
           <thead>
             <tr>
@@ -143,8 +143,48 @@
         </table>
       </div>
 
+      <!-- Jornada 14 - Enfrentamientos nuevos -->
+      <div class="jornada" data-jornada="6" style="display: none;">
+        <h2>Jornada 6 - Resultados (Vuelta Jornada 5)</h2>
+        <table class="resultados">
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Resultado</th>
+              <th>Visitante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Leganes</td><td class="editable resultado" contenteditable="true">2 - 3</td><td>Real Madrid</td></tr>
+            <tr><td>Espanyol</td><td class="editable resultado" contenteditable="true">3 - 0</td><td>Barcelona</td></tr>
+            <tr><td>Villarreal</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Betis</td></tr>
+            <tr><td>Girona</td><td class="editable resultado" contenteditable="true">0 - 3</td><td>Osasuna</td></tr>
+            <tr><td>Getafe</td><td class="editable resultado" contenteditable="true">2 - 2</td><td>Sevilla</td></tr>
+            <tr><td>Real Sociedad</td><td class="editable resultado" contenteditable="true">1 - 2</td><td>Mallorca</td></tr>
+            <tr><td>Valencia</td><td class="editable resultado" contenteditable="true">1 - 0</td><td>Atlético de Madrid</td></tr>
+            <tr><td>Athletic Club</td><td class="editable resultado" contenteditable="true">0 - 0</td><td>Rayo Vallecano</td></tr>
+            <tr><td>Deportivo Alavés</td><td class="editable resultado" contenteditable="true">1 - 1</td><td>Celta Vigo</td></tr>
+            <tr><td>Las Palmas</td><td class="editable resultado" contenteditable="true">2 - 1</td><td>Valladolid</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="leyenda-clasificacion">
+          <h3>Leyenda</h3>
+          <ul>
+            <li><strong>PJ</strong>: Partidos Jugados</li>
+            <li><strong>PG</strong>: Partidos Ganados</li>
+            <li><strong>PE</strong>: Partidos Empatados</li>
+            <li><strong>PP</strong>: Partidos Perdidos</li>
+            <li><strong>GF</strong>: Goles a Favor</li>
+            <li><strong>GC</strong>: Goles en Contra</li>
+            <li><strong>DG</strong>: Diferencia de Goles (GF - GC)</li>
+            <li><strong>Pts</strong>: Puntos</li>
+          </ul>
+        </div>
+
     </div>
 
+      <!-- Reemplaza dentro del <div class="clasificacion"> ... </div> -->
     <div class="clasificacion">
       <h2>Clasificación</h2>
       <input type="text" id="buscador" placeholder="Buscar equipo..." />
@@ -153,33 +193,22 @@
           <tr>
             <th>Pos</th>
             <th>Equipo</th>
-            <th>Puntos</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>GF</th>
+            <th>GC</th>
+            <th>DG</th>
+            <th>Pts</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>Barcelona</td><td>0</td></tr>
-          <tr><td>2</td><td>Real Madrid</td><td>0</td></tr>
-          <tr><td>3</td><td>Atlético de Madrid</td><td>0</td></tr>
-          <tr><td>4</td><td>Athletic Club</td><td>0</td></tr>
-          <tr><td>5</td><td>Real Sociedad</td><td>0</td></tr>
-          <tr><td>6</td><td>Villarreal</td><td>0</td></tr>
-          <tr><td>7</td><td>Mallorca</td><td>0</td></tr>
-          <tr><td>8</td><td>Osasuna</td><td>0</td></tr>
-          <tr><td>9</td><td>Rayo Vallecano</td><td>0</td></tr>
-          <tr><td>10</td><td>Betis</td><td>0</td></tr>
-          <tr><td>11</td><td>Sevilla</td><td>0</td></tr>
-          <tr><td>12</td><td>Getafe</td><td>0</td></tr>
-          <tr><td>13</td><td>Leganes</td><td>0</td></tr>
-          <tr><td>14</td><td>Valencia</td><td>0</td></tr>
-          <tr><td>15</td><td>Valladolid</td><td>0</td></tr>
-          <tr><td>16</td><td>Espanyol</td><td>0</td></tr>
-          <tr><td>17</td><td>Girona</td><td>0</td></tr>
-          <tr><td>18</td><td>Celta Vigo</td><td>0</td></tr>
-          <tr><td>19</td><td>Deportivo Alavés</td><td>0</td></tr>
-          <tr><td>20</td><td>Las Palmas</td><td>0</td></tr>
+          <!-- El cuerpo se rellena automáticamente desde el JS -->
         </tbody>
       </table>
     </div>
+
   </main>
 
   <footer>

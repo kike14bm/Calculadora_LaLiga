@@ -88,7 +88,12 @@ main {
 }
 
 .clasificacion {
-  max-width: 300px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clasif-tabla {
@@ -233,4 +238,81 @@ footer a:hover {
 .jornada-botones {
   display: flex;
   gap: 1em;
+}
+
+/* 1º lugar: oro */
+.clasif-tabla tr:nth-child(1) td {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+}
+
+/* 2º a 4º: Champions League (azul oscuro) */
+.clasif-tabla tr:nth-child(2) td,
+.clasif-tabla tr:nth-child(3) td,
+.clasif-tabla tr:nth-child(4) td {
+  background-color: #002366;
+  color: white;
+  font-weight: bold;
+}
+
+/* 5º y 6º: Europa League (naranja amarillento) */
+.clasif-tabla tr:nth-child(5) td,
+.clasif-tabla tr:nth-child(6) td {
+  background-color: #e48203; /* dorado claro tirando a naranja */
+  color: black;
+  font-weight: bold;
+}
+
+/* 7º: Conference League (verde fuerte) */
+.clasif-tabla tr:nth-child(7) td {
+  background-color: #008000; /* verde oscuro */
+  color: white;
+  font-weight: bold;
+}
+
+/* Últimos 3: descenso (rojo oscuro) */
+.clasif-tabla tr:last-child td,
+.clasif-tabla tr:nth-last-child(2) td,
+.clasif-tabla tr:nth-last-child(3) td {
+  background-color: #8b0000;
+  color: white;
+}
+
+/* Hover suave sin sobreescribir colores */
+.clasif-tabla tr:hover td {
+  filter: brightness(1.1);
+}
+
+/* Transición para suavidad */
+.clasif-tabla tr {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leyenda-clasificacion {
+  /*Centramos la leyenda*/
+  margin: 85px auto;
+  background-color: black;
+  padding: 1.3em;
+  border: 1px solid lightgreen;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  max-width: 450px;
+  width: 100%;
+}
+
+.leyenda-clasificacion h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.1rem;
+  color: #00ff0d; /* Dorado suave */
+}
+
+.leyenda-clasificacion ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.leyenda-clasificacion li {
+  margin-bottom: 0.5em;
 }
